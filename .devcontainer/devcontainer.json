@@ -10,12 +10,17 @@
   "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
   "postCreateCommand": "bash scripts/postCreateCommand.sh",
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {}
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
   },
   "forwardPorts": [3000],
   "customizations": {
     "vscode": {
-      "extensions": ["GitHub.copilot", "GitHub.vscode-github-actions"]
+      "extensions": [
+        "GitHub.copilot", 
+        "GitHub.vscode-github-actions"
+      ]
     }
   },
   "portsAttributes": {
