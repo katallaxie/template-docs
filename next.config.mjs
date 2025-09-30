@@ -5,7 +5,7 @@ const withNextra = nextra({
   search: {
     codeblocks: false,
   },
-  contentDirBasePath: '/'
+  contentDirBasePath: '/',
 });
 
 export default withNextra({

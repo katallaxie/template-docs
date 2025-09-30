@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next --turbopack",
     "build": "next build",
+    "fix": "prettier --write .",
     "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
     "start": "npx -y serve@latest out"
   },
